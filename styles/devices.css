@@ -1,0 +1,225 @@
+/* devices */
+.heroRight{
+  position:relative;
+  display:flex;
+  justify-content:flex-end;
+}
+.device{
+  border-radius:26px;
+  background:rgba(250,243,232,.92);
+  border:1px solid rgba(0,0,0,.10);
+  box-shadow: 0 22px 60px rgba(0,0,0,.18);
+  overflow:hidden;
+}
+.tablet{
+  width:min(520px, 100%);
+}
+
+.deviceTop{
+  height:64px;
+  background: linear-gradient(90deg, var(--green), rgba(31,61,43,.85));
+  display:flex;
+  align-items:center;
+  padding:0 16px;
+  gap:12px;
+  color:#fff;
+}
+.dots{ display:flex; gap:8px; }
+.dots span{
+  width:10px; height:10px; border-radius:999px;
+  background:rgba(255,255,255,.85);
+}
+.tabletBrand{
+  font-weight:900;
+  letter-spacing:.10em;
+  margin-left:8px;
+}
+.tabletMenu{
+  margin-left:auto;
+  font-size:20px;
+  opacity:.95;
+}
+
+.deviceBody{ padding:18px; }
+
+.tabletHero{
+  background:
+    radial-gradient(540px 240px at 20% 0%, rgba(255,255,255,.35), transparent 65%),
+    linear-gradient(135deg, rgba(244,183,64,.98), rgba(246,197,126,.92));
+  border-radius:22px;
+  padding:18px;
+  display:grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap:14px;
+  align-items:center;
+  border:1px solid rgba(0,0,0,.06);
+}
+.tabletTitle{
+  font-weight:950;
+  font-size:22px;
+  margin-bottom:6px;
+}
+.tabletText{
+  color:rgba(0,0,0,.72);
+  font-weight:700;
+  font-size:13px;
+  line-height:1.35;
+}
+.tabletBtns{ display:flex; gap:10px; margin-top:12px; }
+.miniBtn{
+  border-radius:999px;
+  padding:8px 12px;
+  font-weight:900;
+  font-size:12px;
+  border:1px solid rgba(0,0,0,.10);
+}
+.miniBtnPrimary{
+  background:var(--green);
+  color:#fff;
+  border-color: transparent;
+}
+.miniBtnGhost{
+  background:rgba(255,255,255,.45);
+  color:var(--green);
+  border-color: rgba(31,61,43,.25);
+}
+
+/* simple food illustration shapes */
+.foodArt{ position:relative; height:120px; }
+.foodCircle{
+  position:absolute; right:14px; top:10px;
+  width:96px;height:96px;border-radius:999px;
+  background:rgba(255,255,255,.35);
+  border:1px solid rgba(0,0,0,.06);
+}
+.foodLeaf{
+  position:absolute; right:86px; top:28px;
+  width:44px;height:22px;border-radius:999px;
+  background:rgba(58,107,79,.55);
+  transform: rotate(-18deg);
+}
+.foodTomato{
+  position:absolute; right:30px; top:60px;
+  width:26px;height:26px;border-radius:999px;
+  background:rgba(220,70,70,.65);
+}
+.foodBread{
+  position:absolute; right:62px; top:74px;
+  width:52px;height:28px;border-radius:16px;
+  background:rgba(180,130,80,.45);
+}
+
+.cardsRow{
+  margin-top:14px;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:10px;
+}
+.infoCard{
+  background:rgba(255,255,255,.55);
+  border:1px solid rgba(0,0,0,.08);
+  border-radius:18px;
+  padding:12px;
+}
+.infoTop{
+  display:flex;
+  gap:10px;
+  align-items:center;
+  margin-bottom:8px;
+}
+.iconDot{
+  width:30px;height:30px;border-radius:999px;
+  display:grid;place-items:center;
+  background:rgba(244,183,64,.28);
+  border:1px solid rgba(244,183,64,.40);
+}
+.infoCard p{
+  margin:0;
+  font-size:12px;
+  color:rgba(0,0,0,.66);
+  line-height:1.35;
+}
+
+.impactStrip{
+  margin-top:14px;
+  border-radius:18px;
+  border:1px solid rgba(0,0,0,.08);
+  background:rgba(255,255,255,.55);
+  padding:12px;
+}
+.impactTitle{ font-weight:950; color:var(--green); margin-bottom:8px; }
+.impactGrid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:10px;
+}
+.impactBox{
+  background:rgba(250,243,232,.9);
+  border:1px solid rgba(0,0,0,.08);
+  border-radius:16px;
+  padding:10px;
+  text-align:center;
+}
+.impactKpi{
+  font-weight:950;
+  font-size:18px;
+  color:var(--green);
+}
+.impactLabel{
+  font-size:11px;
+  font-weight:800;
+  color:rgba(31,61,43,.70);
+  margin-top:2px;
+}
+
+/* phone overlay */
+.phone{
+  width:220px;
+  position:absolute;
+  right:-6px;
+  bottom:-26px;
+  border-radius:28px;
+  background:rgba(250,243,232,.95);
+}
+.phoneTop{
+  background: linear-gradient(90deg, var(--green), rgba(31,61,43,.85));
+  padding:12px 14px;
+  color:#fff;
+}
+.phoneBar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-weight:900;
+  letter-spacing:.10em;
+  font-size:12px;
+}
+.phoneBody{
+  padding:14px;
+  background:
+    radial-gradient(380px 180px at 20% 0%, rgba(255,255,255,.35), transparent 65%),
+    linear-gradient(135deg, rgba(244,183,64,.98), rgba(246,197,126,.92));
+}
+.phoneTitle{
+  font-weight:950;
+  font-size:16px;
+  margin:0 0 8px;
+}
+.phoneText{
+  font-weight:800;
+  font-size:12px;
+  color:rgba(0,0,0,.72);
+  line-height:1.35;
+  margin-bottom:12px;
+}
+.phoneBtn{ width:100%; padding:10px 14px; font-size:13px; }
+.phoneFooter{
+  margin-top:14px;
+  display:flex;
+  justify-content:center;
+  gap:10px;
+}
+.phoneFooter span{
+  width:8px;height:8px;border-radius:999px;
+  background:rgba(31,61,43,.35);
+}

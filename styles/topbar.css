@@ -1,0 +1,44 @@
+/* topbar */
+.topbar{
+  position:sticky;
+  top:0;
+  z-index:20;
+  background:var(--green);
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.topbarInner{
+  height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+}
+.brandPill{
+  display:inline-block;
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.14);
+  border-radius:999px;
+  padding:10px 14px;
+  text-decoration:none;
+}
+.brandText{
+  color:#fff;
+  font-weight:900;
+  letter-spacing:.12em;
+  font-size:12px;
+  text-transform:uppercase;
+  white-space:nowrap;
+}
+.nav{
+  display:flex;
+  gap:18px;
+  align-items:center;
+  margin-left:auto;
+}
+.nav a{
+  color:rgba(255,255,255,.9);
+  text-decoration:none;
+  font-weight:700;
+  font-size:14px;
+}
+.nav a:hover{ text-decoration:underline; }
