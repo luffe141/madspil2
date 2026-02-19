@@ -66,6 +66,11 @@
   color:#fff;
 }
 
+.nav a[aria-current="page"]{
+  background:rgba(255,255,255,.18);
+  color:#fff;
+}
+
 .loginBtn{
   display:inline-flex;
   align-items:center;
@@ -85,4 +90,9 @@
 .loginBtn:hover{
   background:rgba(255,255,255,.14);
   border-color:rgba(255,255,255,.7);
+}
+
+.loginBtn[aria-current="page"]{
+  background:rgba(255,255,255,.2);
+  border-color:rgba(255,255,255,.82);
 }

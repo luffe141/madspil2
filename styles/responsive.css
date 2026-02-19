@@ -18,6 +18,55 @@
     background-size:100% 100%, 100% 100%;
     background-position:left top, left top;
   }
+  .statsHeader h2{ font-size:56px; }
+  .statsHeader p{ font-size:18px; }
+  .statsVisuals{ grid-template-columns:1fr; }
+  .barsCard,
+  .pieCard{ min-height:auto; }
+  .barValue{ font-size:44px; }
+  .barSub{ font-size:16px; }
+  .barLabel{ font-size:24px; }
+  .pieShell{ width:min(460px, 100%); }
+  .pieTagTop{ top:30px; left:8%; }
+  .pieTagRight{ top:40%; right:5%; }
+  .pieTag img{ width:52px; height:30px; }
+  .pieTag strong{ font-size:54px; }
+  .pieTag span{ font-size:16px; }
+  .keyPoints h3{ font-size:38px; }
+  .keyPoints li{ font-size:30px; }
+  .sources{ font-size:24px; }
+
+  .infoPage .statsHeader h2{ font-size:52px; }
+  .infoPage .statsHeader p{ font-size:20px; }
+  .infoPage .statsVisuals{ grid-template-columns:1fr; gap:18px; }
+  .infoPage .barsCard,
+  .infoPage .pieCard{ min-height:auto; }
+  .infoPage .pieCard{ margin-left:0; margin-top:0; }
+  .infoPage .barsCard{ padding:18px 14px 12px; }
+  .infoPage .barsCard::before{
+    left:12px;
+    top:98px;
+    font-size:18px;
+    line-height:58px;
+  }
+  .infoPage .axisLabel{ margin-left:12px; font-size:34px; }
+  .infoPage .barsGrid{ min-height:340px; padding-left:62px; gap:18px; background-size:100% 58px; }
+  .infoPage .barDk{ height:220px; }
+  .infoPage .barEu{ height:130px; }
+  .infoPage .barValue{ font-size:34px; }
+  .infoPage .barSub{ font-size:13px; }
+  .infoPage .barLabel{ font-size:30px; }
+  .infoPage .pieShell{ width:min(560px, 100%); }
+  .infoPage .pieTagTop{ top:35px; left:4%; }
+  .infoPage .pieTagRight{ top:32%; right:2%; }
+  .infoPage .pieTag img{ width:240px; height:143px; }
+  .infoPage .pieTag strong{ font-size:52px; }
+  .infoPage .pieTag span{ font-size:17px; }
+  .infoPage .keyPoints{ margin-top:0; border-radius:14px; }
+  .infoPage .keyPoints h3{ font-size:34px; }
+  .infoPage .keyPoints li{ font-size:17px; }
+  .infoPage .sources{ font-size:14px; }
+  .infoPage .statsSection::after{ width:170px; height:170px; right:10px; bottom:18px; }
 }
 @media (max-width: 720px){
   .topbar .wrap{ padding-inline:10px; }
@@ -30,6 +79,60 @@
   .cardsRow{ grid-template-columns: 1fr; }
   .impactGrid{ grid-template-columns: 1fr; }
   .three{ grid-template-columns: 1fr; }
+  .below{ padding:28px 0 40px; }
+  .statsHeader h2{ font-size:40px; }
+  .statsHeader p{ font-size:16px; }
+  .chartCard{ padding:14px; border-radius:18px; }
+  .barsGrid{ gap:14px; min-height:280px; }
+  .flagImg{ width:64px; height:42px; }
+  .bar{ width:100%; }
+  .barDk{ height:190px; }
+  .barEu{ height:120px; }
+  .barValue{ font-size:30px; }
+  .barSub{ font-size:13px; }
+  .barLabel{ font-size:18px; }
+  .pieShell{ width:min(320px, 100%); --pie-ring:9px; }
+  .pieCenter{ width:84px; border-width:7px; }
+  .pieCenter img{ width:30px; height:30px; }
+  .pieTagTop{ top:20px; left:7%; }
+  .pieTagRight{ top:40%; right:4%; }
+  .pieTag img{ width:40px; height:24px; }
+  .pieTag strong{ font-size:34px; }
+  .pieTag span{ font-size:12px; }
+  .keyPoints{ padding:14px 16px; }
+  .keyPoints h3{ font-size:28px; }
+  .keyPoints li{ font-size:18px; }
+  .sources{ font-size:14px; }
+
+  .infoPage .below{ padding:28px 0 42px; }
+  .infoPage .below::before{ width:500px; height:500px; right:-230px; top:72px; --globe-ring:10px; }
+  .infoPage .statsHeader h2{ font-size:42px; }
+  .infoPage .statsHeader p{ font-size:18px; max-width:30ch; }
+  .infoPage .barsCard{ border-radius:18px; padding:14px 12px 10px; }
+  .infoPage .barsCard::before{ left:10px; top:84px; font-size:14px; line-height:42px; }
+  .infoPage .axisLabel{ margin-left:8px; margin-bottom:8px; font-size:27px; }
+  .infoPage .barsGrid{ min-height:260px; padding:0 6px 0 44px; gap:10px; background-size:100% 42px; }
+  .infoPage .flagImg{ width:58px; height:38px; }
+  .infoPage .bar{ width:100%; padding:10px 6px; }
+  .infoPage .barDk{ height:170px; }
+  .infoPage .barEu{ height:110px; }
+  .infoPage .barValue{ font-size:26px; }
+  .infoPage .barSub{ margin-top:4px; font-size:12px; }
+  .infoPage .barLabel{ font-size:22px; }
+  .infoPage .pieShell{ width:min(360px, 100%); --pie-ring:10px; }
+  .infoPage .pieCenter{ width:94px; border-width:7px; }
+  .infoPage .pieCenter img{ width:93px; height:93px; }
+  .infoPage .pieTag{ width:46%; }
+  .infoPage .pieTagTop{ top:20px; left:5%; }
+  .infoPage .pieTagRight{ top:34%; right:2%; }
+  .infoPage .pieTag img{ width:153px; height:95px; }
+  .infoPage .pieTag strong{ font-size:32px; }
+  .infoPage .pieTag span{ font-size:12px; }
+  .infoPage .keyPoints{ padding:14px 14px 12px; border-radius:12px; }
+  .infoPage .keyPoints h3{ font-size:28px; }
+  .infoPage .keyPoints li{ font-size:16px; }
+  .infoPage .sources{ font-size:13px; }
+  .infoPage .statsSection::after{ width:146px; height:146px; right:6px; bottom:6px; opacity:.75; }
   .phone{ display:none; }
   .heroLeft{ max-width:100%; }
   .heroImage{ width:min(134.4vw, 792px); }

@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles/responsive.css" />
 </head>
 
-<body>
+<body class="infoPage">
     <header class="topbar">
         <div class="wrap topbarInner">
             <a class="brandPill" href="index.html" aria-label="Danmark mod madspild">
@@ -23,20 +23,82 @@
 
             <nav class="nav" aria-label="Primær navigation">
                 <a href="tips.html">Tips</a>
-                <a href="information.html">Information</a>
+                <a href="information.html" aria-current="page">Information</a>
                 <a href="omOs.html">Om os</a>
                 <a href="opskrifter.html">Opskrifter</a>
             </nav>
 
-            <a class="loginBtn" href="#">Log ind</a>
+            <a class="loginBtn" href="login.html">Log ind</a>
         </div>
     </header>
 
     <main>
         <section class="below">
             <div class="wrap belowInner">
-                <h2>Information</h2>
-                <p>Her finder du information om holdbarhed, opbevaring og mindre madspild.</p>
+                <section class="statsSection" aria-labelledby="madspildStatistik">
+                    <div class="statsHeader">
+                        <h2 id="madspildStatistik">Ny statistik om madspild</h2>
+                        <p>Danmark ligger markant over EU-gennemsnittet i madspild pr. indbygger.</p>
+                    </div>
+
+                    <div class="statsVisuals">
+                        <article class="chartCard barsCard" aria-label="Søjlediagram med Danmark og EU-gennemsnit">
+                            <div class="axisLabel">kg</div>
+                            <div class="barsGrid">
+                                <div class="barCol">
+                                    <img class="flagImg" src="assets/denmark.png" alt="Danmarks flag" />
+                                    <div class="bar barDk">
+                                        <span class="barValue">~261 kg</span>
+                                        <span class="barSub">pr. indbygger / år</span>
+                                    </div>
+                                    <p class="barLabel">Danmark</p>
+                                </div>
+
+                                <div class="barCol">
+                                    <img class="flagImg" src="assets/eu.png" alt="EU flag" />
+                                    <div class="bar barEu">
+                                        <span class="barValue">~130 kg</span>
+                                        <span class="barSub">pr. indbygger / år</span>
+                                    </div>
+                                    <p class="barLabel">EU gennemsnit</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="chartCard pieCard" aria-label="Fordeling af madspild i forsyningskæden">
+                            <div class="pieShell">
+                                <div class="pieChart">
+                                    <div class="pieCenter">
+                                        <img src="assets/gafel kbic.png" alt="Bestik ikon" />
+                                    </div>
+
+                                    <div class="pieTag pieTagTop">
+                                        <img src="assets/landbrug.png" alt="Landbrug og forarbejdning" />
+                                        <strong>~13%</strong>
+                                        <span>Tab ved høst og forarbejdning</span>
+                                    </div>
+
+                                    <div class="pieTag pieTagRight">
+                                        <img src="assets/bagg.png" alt="Detail og forbrug" />
+                                        <strong>~19%</strong>
+                                        <span>Spild ved detail og forbrug</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <article class="keyPoints">
+                        <h3>Hovedpointer:</h3>
+                        <ul>
+                            <li><strong>Danmark:</strong> ca. 261 kg madspild pr. indbygger pr. år</li>
+                            <li><strong>EU gennemsnit:</strong> ca. 130 kg pr. indbygger</li>
+                            <li><strong>Globalt</strong> går ~13% tabt i forsyningskæden</li>
+                            <li>~<strong>19% spildes</strong> ved detail og forbrug</li>
+                        </ul>
+                        <p class="sources">Kilder: Eurostat, UNEP Food Waste Index, FAO</p>
+                    </article>
+                </section>
             </div>
         </section>
     </main>

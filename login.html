@@ -4,17 +4,15 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Tips · Danmark mod madspild</title>
+    <title>Log ind · Danmark mod madspild</title>
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/topbar.css" />
-    <link rel="stylesheet" href="styles/hero.css" />
-    <link rel="stylesheet" href="styles/below.css" />
-    <link rel="stylesheet" href="styles/ifram.css" />
+    <link rel="stylesheet" href="styles/login.css" />
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/responsive.css" />
 </head>
 
-<body>
+<body class="loginPage">
     <header class="topbar">
         <div class="wrap topbarInner">
             <a class="brandPill" href="index.html" aria-label="Danmark mod madspild">
@@ -22,21 +20,35 @@
             </a>
 
             <nav class="nav" aria-label="Primær navigation">
-                <a href="tips.html" aria-current="page">Tips</a>
+                <a href="tips.html">Tips</a>
                 <a href="information.html">Information</a>
                 <a href="omOs.html">Om os</a>
                 <a href="opskrifter.html">Opskrifter</a>
             </nav>
 
-            <a class="loginBtn" href="login.html">Log ind</a>
+            <a class="loginBtn" href="login.html" aria-current="page">Log ind</a>
         </div>
     </header>
 
-    <main>
-        <section class="below">
-            <div class="wrap belowInner">
-                <h2>Tips</h2>
-                <p>Her samler vi tips til mindre madspild i hverdagen.</p>
+    <main class="loginMain">
+        <section class="loginSection">
+            <div class="wrap loginWrap">
+                <div class="loginIntro">
+                    <div class="loginBadge">Danmark mod madspild</div>
+                    <h1>Log ind</h1>
+                    <p>Fortsæt dit arbejde med mindre madspild, få overblik over dine valg og følg din udvikling.</p>
+                </div>
+
+                <form class="loginCard" action="#" method="post">
+                    <label for="email">E-mail</label>
+                    <input id="email" name="email" type="email" placeholder="din@email.dk" required />
+
+                    <label for="password">Adgangskode</label>
+                    <input id="password" name="password" type="password" placeholder="••••••••" required />
+
+                    <button type="submit">Log ind</button>
+                    <a class="forgotLink" href="#">Glemt adgangskode?</a>
+                </form>
             </div>
         </section>
     </main>
