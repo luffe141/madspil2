@@ -1,3 +1,23 @@
+html, body {
+  height: 100%;
+  background: #254d37;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f9f4ea;
+}
+main {
+  flex: 1 0 auto;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+footer.siteFooter {
+  flex-shrink: 0;
+}
 :root{
   --green:#1F3D2B;
   --green2:#3A6B4F;

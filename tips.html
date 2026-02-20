@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="styles/ifram.css" />
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/responsive.css" />
+    <link rel="stylesheet" href="styles/tips.css" />
+    <link rel="stylesheet" href="styles/tips-cards.css" />
 </head>
 
 <body>
@@ -35,11 +37,219 @@
     <main>
         <section class="below">
             <div class="wrap belowInner">
-                <h2>Tips</h2>
-                <p>Her samler vi tips til mindre madspild i hverdagen.</p>
+                <div class="tips-slider-header-wrap">
+                  <div class="tips-slider-header">
+                      <button class="tips-category-btn" data-category="virksomhed">Virksomhed</button>
+                      <button class="tips-category-btn" data-category="husholdning">Husholdning</button>
+                  </div>
+                  <h2 id="tips-title" class="tips-titledu">Tips til husholdning</h2>
+                </div>
+                <div class="tips-slider">
+                    <div class="tips-slides">
+                        <div class="tips-slide tips-card" data-category="husholdning">
+                            <div class="tips-card-header"><span class="tips-card-icon">🥕</span>Brug grøntsager op <span
+                                    class="tips-card-emoji">🍲</span></div>
+                            <img class="tips-card-img"
+                                src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=600&q=80"
+                                alt="Brug grøntsager" />
+                            <div class="tips-card-body">Lav grøntsagssuppe eller wok af grøntsager, der er ved at blive
+                                bløde.</div>
+                        </div>
+                        <div class="tips-slide tips-card" data-category="husholdning">
+                            <div class="tips-card-header"><span class="tips-card-icon">🍞</span>Frys brød <span
+                                    class="tips-card-emoji">🧊</span></div>
+                            <img class="tips-card-img"
+                                src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80"
+                                alt="Frys brød" />
+                            <div class="tips-card-body">Frys brød ned i skiver, så du kun tager det op, du skal bruge.
+                            </div>
+                        </div>
+                        <div class="tips-slide tips-card" data-category="husholdning">
+                            <div class="tips-card-header"><span class="tips-card-icon">🥛</span>Brug mælkerester <span
+                                    class="tips-card-emoji">🥞</span></div>
+                            <img class="tips-card-img"
+                                src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80"
+                                alt="Brug mælkerester" />
+                            <div class="tips-card-body">Brug rester af mælk i pandekager, bagværk eller smoothies.</div>
+                        </div>
+                        <div class="tips-slide tips-card" data-category="husholdning">
+                            <div class="tips-card-header"><span class="tips-card-icon">🍏</span>Lav madplan <span
+                                    class="tips-card-emoji">📅</span></div>
+                            <img class="tips-card-img"
+                                src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=600&q=80"
+                                alt="Madplan" />
+                            <div class="tips-card-body">Planlæg ugens måltider, så du får brugt det, du har i
+                                køleskabet.</div>
+                        </div>
+                        <div class="tips-slide tips-card" data-category="husholdning">
+                            <div class="tips-card-header"><span class="tips-card-icon">🥚</span>Test æg <span
+                                    class="tips-card-emoji">💧</span></div>
+                            <img class="tips-card-img"
+                                src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80"
+                                alt="Test æg" />
+                            <div class="tips-card-body">Læg æg i vand – synker de, kan de stadig bruges.</div>
+                        </div>
+                        <div class="tips-slide tips-card" data-category="husholdning">
+                            <div class="tips-card-header"><span class="tips-card-icon">🧀</span>Brug ost <span
+                                    class="tips-card-emoji">🍕</span></div>
+                            <img class="tips-card-img"
+                                src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80"
+                                alt="Brug ost" />
+                            <div class="tips-card-body">Riv rester af ost og brug dem på pizza, i omelet eller gratin.
+                            </div>
+                        </div>
+                        <!-- Husholdning cards -->
+                        <div class="tips-slide tips-card" data-category="husholdning">
+                            <div class="tips-card-header"><span class="tips-card-icon">🛒</span>Planlæg indkøb <span
+                                    class="tips-card-emoji">📝</span></div>
+                            <img class="tips-card-img"
+                                src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=600&q=80"
+                                alt="Indkøbsliste" />
+                            <div class="tips-card-body">Lav en indkøbsliste og undgå impulskøb – det mindsker madspild.
+                            </div>
+                        </div>
+                        <div class="tips-slide tips-card" data-category="husholdning">
+                            <div class="tips-card-header"><span class="tips-card-icon">🥫</span>Opbevar rigtigt <span
+                                    class="tips-card-emoji">❄️</span></div>
+                            <img class="tips-card-img"
+                                src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=600&q=80"
+                                alt="Opbevaring" />
+                            <div class="tips-card-body">Sæt nye varer bagerst og brug de ældste først. Opbevar mad
+                                korrekt.</div>
+                        </div>
+                        <div class="tips-slide tips-card" data-category="husholdning">
+                            <div class="tips-card-header"><span class="tips-card-icon">🍽️</span>Brug rester <span
+                                    class="tips-card-emoji">♻️</span></div>
+                            <img class="tips-card-img"
+                                src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80"
+                                alt="Rester" />
+                            <div class="tips-card-body">Lav nye retter af rester, fx biksemad, tærte eller suppe.</div>
+                        </div>
+                        <div class="tips-slide tips-card" data-category="husholdning">
+                            <div class="tips-card-header"><span class="tips-card-icon">👀</span>Tjek holdbarhed <span
+                                    class="tips-card-emoji">⏳</span></div>
+                            <img class="tips-card-img"
+                                src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80"
+                                alt="Holdbarhed" />
+                            <div class="tips-card-body">Brug sanserne – ofte kan mad spises efter "bedst før"-datoen.
+                            </div>
+                        </div>
+                        <div class="tips-slide tips-card" data-category="husholdning">
+                            <div class="tips-card-header"><span class="tips-card-icon">🧊</span>Frys ned <span
+                                    class="tips-card-emoji">🧑‍🍳</span></div>
+                            <img class="tips-card-img"
+                                src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80"
+                                alt="Frys ned" />
+                            <div class="tips-card-body">Frys rester ned i små portioner, så de nemt kan bruges senere.
+                            </div>
+                        </div>
+                        <div class="tips-slide tips-card" data-category="husholdning">
+                            <div class="tips-card-header"><span class="tips-card-icon">👨‍👩‍👧‍👦</span>Involver
+                                familien <span class="tips-card-emoji">💬</span></div>
+                            <img class="tips-card-img"
+                                src="https://images.unsplash.com/photo-1520880867055-1e30d1cb001c?auto=format&fit=crop&w=600&q=80"
+                                alt="Familie" />
+                            <div class="tips-card-body">Tal om madspild og gør det til en fælles indsats i hjemmet.
+                            </div>
+                        </div>
+                        <div class="tips-slide tips-card" data-category="virksomhed">
+                            <div class="tips-card-header"><span class="tips-card-icon">📦</span>Optimer lagerstyring
+                                <span class="tips-card-emoji">📊</span>
+                            </div>
+                            <img class="tips-card-img"
+                                src="https://images.unsplash.com/photo-1515168833906-d2a3b82b302b?auto=format&fit=crop&w=600&q=80"
+                                alt="Lagerstyring" />
+                            <div class="tips-card-body">Brug digitale systemer til at holde styr på beholdning og
+                                udløbsdatoer.</div>
+                        </div>
+                        <div class="tips-slide tips-card" data-category="virksomhed">
+                            <div class="tips-card-header"><span class="tips-card-icon">🧑‍🌾</span>Uddan medarbejdere
+                                <span class="tips-card-emoji">🎓</span>
+                            </div>
+                            <img class="tips-card-img"
+                                src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80"
+                                alt="Uddannelse medarbejdere" />
+                            <div class="tips-card-body">Træn personale i korrekt håndtering og sortering for at minimere
+                                spild.</div>
+                        </div>
+                        <div class="tips-slide tips-card" data-category="virksomhed">
+                            <div class="tips-card-header"><span class="tips-card-icon">💡</span>Innovér produkter <span
+                                    class="tips-card-emoji">🧃</span></div>
+                            <img class="tips-card-img"
+                                src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80"
+                                alt="Innovation produkter" />
+                            <div class="tips-card-body">Udnyt restprodukter til nye varer, fx smoothies eller snacks.
+                            </div>
+                        </div>
+                        <div class="tips-slide tips-card" data-category="virksomhed">
+                            <div class="tips-card-header"><span class="tips-card-icon">🌱</span>Donér overskud <span
+                                    class="tips-card-emoji">🤲</span></div>
+                            <img class="tips-card-img"
+                                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
+                                alt="Donation af mad" />
+                            <div class="tips-card-body">Giv overskudsmad til velgørenhed frem for at kassere det.</div>
+                        </div>
+                        <!-- Husholdning/virksomhed cards -->
+                        <div class="tips-slide tips-card" data-category="virksomhed">
+                            <div class="tips-card-header"><span class="tips-card-icon">➕</span>Planlæg høsten præcist
+                                <span class="tips-card-emoji">🌾</span>
+                            </div>
+                            <img class="tips-card-img"
+                                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
+                                alt="Drone over mark" />
+                            <div class="tips-card-body">Brug data og vejrudsigter til at høste på det rette tidspunkt –
+                                det mindsker tab på marken.</div>
+                        </div>
+                        <div class="tips-slide tips-card" data-category="virksomhed">
+                            <div class="tips-card-header"><span class="tips-card-icon">🗂️</span>Sortér – kassér mindre
+                                <span class="tips-card-emoji">🥕</span>
+                            </div>
+                            <img class="tips-card-img"
+                                src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=600&q=80"
+                                alt="Sortering af grøntsager" />
+                            <div class="tips-card-body">Brug flere kvalitetsklasser, så “skæve” varer også bliver solgt
+                                i stedet for smidt ud.</div>
+                        </div>
+                        <div class="tips-slide tips-card" data-category="virksomhed">
+                            <div class="tips-card-header"><span class="tips-card-icon">❄️</span>Opbevar korrekt <span
+                                    class="tips-card-emoji">🌡️</span></div>
+                            <img class="tips-card-img"
+                                src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80"
+                                alt="Kølerum grøntsager" />
+                            <div class="tips-card-body">Rigtig temperatur og fugtighed forlænger holdbarheden og
+                                reducerer spild.</div>
+                        </div>
+                        <div class="tips-slide tips-card" data-category="virksomhed">
+                            <div class="tips-card-header"><span class="tips-card-icon">🍅</span>Forarbejd overskud</div>
+                            <img class="tips-card-img"
+                                src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80"
+                                alt="Forarbejdning af grøntsager" />
+                            <div class="tips-card-body">Lav juice, suppe eller frostvarer af varer, der ikke sælges
+                                friske.</div>
+                        </div>
+                        <div class="tips-slide tips-card" data-category="virksomhed">
+                            <div class="tips-card-header"><span class="tips-card-icon">🤝</span>Samarbejd om løsninger
+                            </div>
+                            <img class="tips-card-img"
+                                src="https://images.unsplash.com/photo-1520880867055-1e30d1cb001c?auto=format&fit=crop&w=600&q=80"
+                                alt="Samarbejde landmænd" />
+                            <div class="tips-card-body">Tæt dialog mellem landmænd, producenter og aftagere mindsker
+                                overproduktion.</div>
+                        </div>
+                    </div>
+                    <div class="tips-slider-controls">
+                        <button class="tips-prev">&#9664;</button>
+                        <span class="tips-dot"></span>
+                        <span class="tips-dot"></span>
+                        <button class="tips-next">&#9654;</button>
+                    </div>
+                </div>
+            </div>
             </div>
         </section>
     </main>
+
+    <script src="slider.js"></script>
 
     <footer class="siteFooter">
         <div class="wrap footerInner">

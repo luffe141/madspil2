@@ -1,0 +1,63 @@
+/* Tips cards styling */
+/* Større og ensartede cards */
+.tips-card {
+  background: #fff;
+  border-radius: 0.5em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  border: 1.5px solid #e0e0e0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-width: 400px;
+  max-width: 520px;
+  width: 100%;
+  margin: 0 auto;
+  height: 480px;
+}
+.tips-card-header {
+  display: flex;
+  align-items: center;
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 1em 1em 0.5em 1em;
+  gap: 0.5em;
+}
+.tips-card-header .tips-card-icon {
+  font-size: 1.3em;
+  margin-right: 0.3em;
+}
+.tips-card-header .tips-card-emoji {
+  font-size: 1.2em;
+  margin-left: 0.3em;
+}
+.tips-card-img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 0.2em;
+  margin-bottom: 0.5em;
+  border-left: 32px solid white;
+  border-right: 32px solid white;
+  box-sizing: border-box;
+}
+.tips-card-body {
+  padding: 0 1em 1em 1em;
+  font-size: 1.08em;
+  color: #222;
+}
+.tips-card-footer {
+  padding: 0 1em 1em 1em;
+  font-size: 1em;
+  color: #333;
+}
+@media (max-width: 1000px) {
+  .tips-card {
+    min-width: 220px;
+    max-width: 100%;
+    height: 220px;
+  }
+  .tips-card-img {
+    height: 100px;
+  }
+}
