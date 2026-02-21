@@ -1,3 +1,13 @@
+/* Pie chart tag left position */
+.pieTagLeft {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-15%, -40%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 html, body {
   height: 100%;
   background: #254d37;
